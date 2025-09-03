@@ -10,7 +10,7 @@ while (true) {
     chute = prompt(`Escolha um número entre 1 e ${numeroMax}:`);
 
     if (chute === null) {
-        alert("Jogo cancelado 😿");
+        alert("Jogo cancelado");
         break; 
     }
 
