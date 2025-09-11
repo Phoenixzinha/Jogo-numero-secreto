@@ -2,7 +2,7 @@
 
 Bem-vindo(a) ao meu primeiro projeto de estudo com JavaScript!  
 O objetivo do jogo é simples, tentar acertar qual o número secreto.
-Um número aleatório entre 1 e 300 será gerado de forma aleatória, e o desafio é acertar com o menor número de tentativas possível!
+Será gerado um número aleatório entre 1 e 300 e o desafio é acertar com o menor número de tentativas possível!
 
 ---
 
