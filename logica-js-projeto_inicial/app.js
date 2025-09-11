@@ -28,9 +28,9 @@ while (true) {
         
     } else {
         if (chute > numeroSecreto) {
-            alert(`O número da casa do gato é menor que ${chute}`);
+            alert(`O número secreto é menor que ${chute}`);
         } else {
-            alert(`O número da casa do gato é maior que ${chute}`);
+            alert(`O número secreto é maior que ${chute}`);
         }
         numeroTentativas++;
     }
