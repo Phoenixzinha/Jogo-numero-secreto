@@ -8,8 +8,8 @@ Um número aleatório entre 1 e 300 será gerado de forma aleatória, e o desafi
 
 ## Tecnologias usadas
 
-- HTML5  
-- CSS3  
+- HTML
+- CSS  
 - JavaScript (puro)  
 
 ---
