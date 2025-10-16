@@ -1,4 +1,4 @@
-# Jogo do Número Secreto ✨
+# Jogo do Número Secreto 
 
 Bem-vindo(a) ao meu primeiro projeto de estudo com JavaScript!  
 O objetivo do jogo é simples, tentar acertar qual o número secreto.
