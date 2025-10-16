@@ -149,28 +149,56 @@ input#input-chute::placeholder {
     .container__conteudo {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .container__imagem-robo {
-        width: 100%;
+        width: 60%;
         height: auto;
         margin-right: 0;
         margin-bottom: 20px;
     }
 
-    h1 {
-        font-size: 48px;
+    .container__informacoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
-    h2 {
-        font-size: 24px;
+    #parabens-texto {
+        font-size: 40px;
+        margin-bottom: 15px;
     }
 
-    #boas-vindas h2 {
-        font-size: 22px;
+    #trophy-img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #ruido {
+        background-size: cover;
+        background-position: center;
+    }
+
+    h2#mensagem {
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 
     input#input-chute {
         width: 80%;
     }
+
+    .container__botao {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #jogar-novamente {
+        margin-top: 15px;
+    }
 }
+
