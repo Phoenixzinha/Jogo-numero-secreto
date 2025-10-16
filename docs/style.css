@@ -9,8 +9,23 @@ body {
     background: linear-gradient(#ff75ed 0%, #300432 33.33%, #270432 66.67%, #0b010e 100%);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
+    padding-top: 60px;
+}
+
+
+#boas-vindas {
+    margin-bottom: 40px; 
+}
+
+#boas-vindas h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .container {
@@ -18,29 +33,52 @@ body {
     height: 600px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 24px;
     border: 10px solid #e883f5;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url("img/Ruido.png");
-    background-size: 100% 100%;
     position: relative;
+    overflow: hidden;
+    margin-top: 20px; 
+}
+
+#ruido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/Ruido.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.6;
 }
 
 .container__conteudo {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    justify-content: center;
+    position: relative;
+    z-index: 1; 
+    width: 100%;
+}
+
+.container__imagem-robo {
+    width: 360px;
+    height: 640px;
+    border-radius: 15px;
+    margin-right: 40px; 
 }
 
 .container__informacoes {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 20px;
-}
-
-.container__texto {
-    margin: 16px 0 16px 0;
+    flex: 1; 
 }
 
 .container__texto-azul {
@@ -50,35 +88,74 @@ body {
 h1 {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 72px;
-}
-
-h2,
-p,
-button {
-    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 32px;
     font-weight: 400;
+    margin: 16px 0;
 }
 
+input#input-chute {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+    width: 200px;
+    text-align: center;
+    color: black;
+}
+
+input#input-chute::placeholder {
+    color: #888888;
+}
+
+.container__botao {
+    margin-top: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7c33cf;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container__botao:hover {
+    background-color: #9a5be0;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
 @media screen and (max-width: 768px) {
+    body {
+        padding-top: 40px;
+    }
+
     .container {
-        flex-direction: column;
         width: 90%;
         height: auto;
         padding: 20px;
+        margin-top: 20px;
     }
 
     .container__conteudo {
         flex-direction: column;
-        position: static;
+        align-items: center;
     }
 
     .container__imagem-robo {
         width: 100%;
         height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     h1 {
@@ -89,4 +166,11 @@ h2 {
         font-size: 24px;
     }
 
+    #boas-vindas h2 {
+        font-size: 22px;
+    }
+
+    input#input-chute {
+        width: 80%;
+    }
 }
