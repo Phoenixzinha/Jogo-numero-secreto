@@ -132,6 +132,14 @@ input#input-chute::placeholder {
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
     .container__conteudo {
         flex-direction: column;
         align-items: center;
@@ -141,7 +149,7 @@ input#input-chute::placeholder {
     .container__imagem-robo {
         width: 60%;
         height: auto;
-        margin: 0 0 20px 0;
+        margin-bottom: 20px;
     }
 
     .container__informacoes {
@@ -154,12 +162,12 @@ input#input-chute::placeholder {
     }
 
     #trophy-img {
-        width: 100px;
+        width: 80px;
         height: auto;
     }
 
     #parabens-texto {
-        font-size: 32px;
+        font-size: 28px;
         margin: 0;
     }
 
