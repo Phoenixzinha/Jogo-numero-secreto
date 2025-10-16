@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,24 +9,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>JS Game</title>
+    <title>Jogo do Número Secreto</title>
 </head>
 
 <body>
+
+    <div id="boas-vindas">
+        <h2>Bem-vindo(a) ao Jogo do Número Secreto! 🎉</h2>
+    </div>
+
     <div class="container">
+
+        <div id="ruido" class="hidden"></div>
+
         <div class="container__conteudo">
-        <img src="img/cat.png" width="360" height="640" alt="gato preto" class="container__imagem-robo" style="border-radius: 15px;" />
+
+            <img id="cat-img" src="img/cat.png" alt="Gato preto" class="hidden container__imagem-robo" />
+
+
             <div class="container__informacoes">
-                <img src="img/trophy.png" alt="ícone de um troféu" />
-                 <div class="container__texto">
-                    <h1>Você <span class="container__texto-azul">MEOWCHOU!</span></h1>
-                    <h2> Você descobriu meow número secreto!</h2>
-                </div>
+                <img id="trophy-img" src="img/trophy.png" alt="Troféu" class="hidden" />
+                <h1 id="parabens-texto" class="hidden">Você <span class="container__texto-azul">MEOWCHOU!</span></h1>
+                
+                <h2 id="mensagem">Escolha um número entre 1 e 300!</h2>
+                <input type="number" id="input-chute" placeholder="Digite seu número" min="1" max="300" />
+                <button id="btn-chutar" class="container__botao">Chutar!</button>
+                <button id="jogar-novamente" class="container__botao hidden">Jogar novamente</button>
             </div>
         </div>
     </div>
-    <script src="app.js" defer></script>
-</body>
 
+    <script src="app.js"></script>
+</body>
 
 </html>
